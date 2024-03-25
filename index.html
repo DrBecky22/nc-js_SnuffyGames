@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- styles bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+  <!-- Javascript cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+  <!-- icons emojis favicons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- custom styles -->
+<link rel="stylesheet" href="style.css">
+
+<script defer src="scripts.js"></script>
+
+<title>Fun with Vanilla JavaScript</title>
+</head>
+
+<body>
+    <!-- <video autoplay muted loop id="inkVideo">
+        <source src="images/InkVid.mp4" type="video/mp4"> 
+    </video> -->
+
+    <header id="header-container">
+        <h1 class="site-header-big-words">"Fun" with <em>Vanilla</em> Javascript</h1>
+        <h2 class="site-header-tag-line">Dr. Becky's Coding Adventure part 4: with new & improved ways to waste time</h2>
+    </header>
+
+
+    <div id="Sunffy-Container">
+        <h1 id="snuffy-section-title" onmouseover="colorChange()" onmouseout="colorBack()">This is Snuffy</h1>
+        <div class="snuffy">
+            <img id="snuffyPicStart" src="images/snuffyMain.svg" alt="Cute Elephant">            
+            <!-- <img id="snuffyPicStart" src="elephantBlue.png" alt=""> -->
+        </div>
+    </div>
+
+    <div class="container-fluid card-section" id="snuffy-cards">
+        <h3 id="snuf-subtitle">Some Words about Snuffy</h3>
+        <p>This is Snuffy. Snuffy is an adorable and magical creature that has many moods and can do many things. Explore all Snuffy can do by clicking the buttons below.</p></h2>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" id="Snuffycard1">
+                    <div class="card-header">
+                        <div class="card-header-title"><h4 class="card-title">Falling for Snuffy</h4></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">You spin me right round baby right round, like a record baby... click below to get Sunffy to spin or fall over.... oooohhhhh.</p>
+                        <button class="btn btn-primary" onclick="fallLeft()">Fall Left</button>
+                        <button class="btn btn-primary" id="fallRight">Fall Right</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" id="Snuffycard2">
+                    <div class="card-header">
+                        <div class="card-header-title"><h4 class="card-title">Snuffy Moods</h4></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Click the button to show Snuffy's other personalities. For extra fun, change the color <em>then</em> click a spin button. oooohhhhh.</p>
+                        <button class="btn btn-primary" onclick="snuffyStyleScared()">Confused</button>
+                        <button class="btn btn-primary" onclick="snuffyStyleBlue()">Blue</button>
+                        <button class="btn btn-primary" onclick="snuffyStylePaisley()">PartyPants</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" id="Snuffycard3">
+                    <div class="card-header">
+                        <div class="card-header-title"><h4 class="card-title">Spinning Snuffy</h4></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Click the button to show Snuffy's other personalities. For extra fun, change the color <em>then</em> click a spin button. oooohhhhh.</p>
+                        <button class="btn btn-primary" onclick="spinClock()">Spin Right</button>
+                        <button class="btn btn-primary" onclick="spinWidder()">Spin Left</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- JS Game Cards -->
+    <div class="container-fluid card-section" id="game-cards">
+        <h2 class="card-section-heading">Snuffy invites you to pick a "game" below to test out my new JavaScript Skills!</h2>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <div class="card" id="g-card1">
+                    <div class="card-header">
+                        <div class="card-header-title" id="colorText"><h4 class="card-title">Color Changing Text</h4></div>
+                        <img class="card-header-img" src="https://loremflickr.com/200/150/rainbow" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Click the buttons to see the title text above change</p>
+                        <button class="btn btn-lg blue" onclick="changeColor('blue')" class="blue">Blue</button>
+                        <button class="btn btn-lg green" onclick="changeColor('green')" class="green">Green</button>
+                        <button class="btn btn-lg orange" onclick="changeColor('orange')" class="orange">Orange</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <div class="card" id="g-card2">
+                    <div class="card-header">
+                        <div class="card-header-title"><h4 class="card-title">Love Calculator</h4></div>
+                        <img class="card-header-img" src="https://placekeanu.com/200x150/" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Scope out your love connection! Just how compatible is the object of your desire?</p>
+                        <button type="text/javascript" id="LoveCalc-btn" class="btn btn-success btn-lg btn-love" src="scripts.js" onclick="LoveCalculator()">Play</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" id="g-card3">
+                    <div class="card-header">
+                        <div class="card-header-title"><h4 class="card-title">Time Calculator</h4></div>
+                        <img class="card-header-img" src="https://loremflickr.com/200/150/clock" alt="Bill">  
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Find out how many days, weeks and months you have left before you get to your 90th year</p>
+                        <button id="TimeCalc-btn" class="btn btn-success btn-lg btn-time" onclick="timeCalculator()">Play</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <div class="card" id="g-card4">
+                    <div class="card-header">
+                        <div class="card-header-title"><h4 class="card-title">BMI Calculator</h4></div>
+                        <img class="card-header-img" src="https://loremflickr.com/200/150/food" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">find out how fat the AMA thinks you are with no consideration of your muscle mass</p>
+                        <button type="text/javascript" id="BMI-calc-btn" class="btn btn-success btn-lg btn-bmi" src="scripts.js">Play</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <div class="card" id="g-card5">
+                    <div class="card-header">
+                        <div class="card-header-title"><h4 class="card-title">Dice Game</h4></div>
+                        <img class="card-header-img" src="https://loremflickr.com/200/150/dice" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Roll the Dice and see what happens</p>
+                        <button type="text/javascript" id="BMI-calc-btn" class="btn btn-success btn-lg btn-bmi" src="scripts.js">Play</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <div class="card" id="g-card6">
+                    <div class="card-header">
+                        <div class="card-header-title"><h4 class="card-title">Recipe Finder</h4></div>
+                        <img class="card-header-img" src="https://loremflickr.com/200/150/mountain" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Click the buttons below to see all the things Snuffy can do</p>
+                        <button type="text/javascript" id="BMI-calc-btn" class="btn btn-success btn-lg btn-bmi" src="scripts.js">Play</button>
+                    </div>
+                </div>
+            </div>
+
+    
+    <!-- <div class="container-3" id="colorButtonTestArea">
+        <h3 id="colorText">Color Changing Text</h3>
+        <button onclick="changeColor('blue')" class="blue">Change Color to Blue</button>
+        <button onclick="changeColor('green')" class="green">Change Color to Purple</button>
+        <button onclick="changeColor('orange')" class="orange">Change Color to Orange</button>
+
+        <script> 
+            const name = document.querySelector("#colorText");
+            function changeColor(color){
+            name.style.color = color;
+            }
+        </script>
+    </div> -->
+
+
+<!-- font awseome icons for later -->
+<!-- <i class="fa-solid fa-hourglass-clock"></i>
+<i class="fa-solid fa-face-smile-hearts"></i>
+<i class="fa-solid fa-weight-scale"></i>
+<i class="fa-solid fa-notes-medical"></i> -->
+
+
+</body>
+
+</html>

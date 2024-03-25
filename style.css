@@ -1,0 +1,115 @@
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-100;
+  }
+
+body {
+    background-color: ghostwhite;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;    
+}
+
+p, h2 {
+    font-family: 'Montserrat', sans-serif;   
+}
+
+#header-container {
+    background-color: steelblue;
+    background: "inkVid.mp4";
+    color:azure;
+    padding: 3% 10%;
+    box-shadow: 3px 5px 10px grey;
+}
+
+#snuffy-section-title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.snuffy {
+    height: 30vh;
+    width: 30vh;
+    position: relative;
+    margin:auto;
+}
+
+.card-section {
+    padding: 2% 5% 7%;
+}
+
+.card-section-heading {
+    padding: 3% 10%;
+}
+
+.card-title {
+    font-weight:bolder;
+}
+
+.card {
+    height: auto;
+    margin-top: 20px;
+    padding-top: 5%;
+    box-shadow: 3px 5px 8px rgb(106, 106, 201);
+}
+
+/******************snuffy cards *******************/
+#snuffyPicStart {
+    transition-duration: 3s;
+    height: 85%;
+}
+
+.rotate-clock {
+    transform: rotate(360deg);
+}
+
+.rotate-widd {
+    transform: rotate(-360deg);
+}
+
+/********** .card-header-title {} ***********/
+
+.card-header-img {
+    width: 100%;
+}
+    
+
+.btn {
+    box-shadow: 2px 3px 5px rgb(106, 106, 201);
+}
+
+
+#colorButtonTestArea {
+    margin: 10px;
+}
+
+#colorText {
+    padding-bottom: 25px;
+}
+
+button.blue {
+    background-color: deepskyblue;
+    margin-right: 20px;
+}
+
+button.green {
+    background-color: limegreen;
+    color: white;
+}
+
+button.orange {
+    background-color: orange;
+    margin-left: 20px;
+}
+
+
+
+.container-3 {
+    height: 300px;
+    background-color: lightsteelblue;
+    box-shadow: 3px 2px 10px grey;
+    padding-top: 50px;
+}
