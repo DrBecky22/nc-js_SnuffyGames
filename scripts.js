@@ -59,8 +59,8 @@ function changeColor(color) {
 /////////////////////////Love Calculator Script///////////////////////////
 
 function loveCalculator() {
-    prompt ("what is your name");
-    prompt ("what is your intended's name?");
+    let name = prompt ("what is your name");
+    let name2 = prompt ("what is your intended's name?");
     
     var loveScore = Math.random() *100;
     loveScore = Math.floor(loveScore) +1;
