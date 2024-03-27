@@ -59,11 +59,10 @@ function changeColor(color) {
 /////////////////////////Love Calculator Script///////////////////////////
 
 function loveCalculator() {
-    let name = prompt ("what is your name");
-    let name2 = prompt ("what is your intended's name?");
+    let playerName = prompt ("what is your name?");
+    let loverName = prompt ("what is your intended's name?");
     
-    var loveScore = Math.random() *100;
-    loveScore = Math.floor(loveScore) +1;
+    let loveScore = Math.floor(Math.random() *100) +1;
     
         if (loveScore >=70) {
             alert ("Wow! your love score is " +loveScore+ "%, there is some sizzling chemistry here, congratulations!" )
