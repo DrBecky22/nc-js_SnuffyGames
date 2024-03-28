@@ -51,10 +51,10 @@ function snuffyStylePaisley() {
 
 ///////////////////////////Color Change Script////////////////////////////
 
-function changeColor(color) {
-    let clrText = document.querySelector("#colorText");
-    clrText.style.color = color;
-}
+// function changeColor(color) {
+//     let clrText = document.querySelector("#colorText");
+//     clrText.style.color = color;
+// }
 
 /////////////////////////Love Calculator Script///////////////////////////
 
