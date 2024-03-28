@@ -15,7 +15,7 @@ const fallRtBtn = document.getElementById('fallRight');
 
 function fallRight() {
     // document.getElementById('snuffyPicStart').style.transform;
-    currentDeg += 90;
+    currentDeg += 90
     // currentDeg = currentDeg + 90
     snuffyPic.style.transform = "rotate(90deg)";
 }
@@ -32,6 +32,7 @@ function spinClock() {
 function spinWidder() {
     document.getElementById('snuffyPicStart').classList.add('rotate-widd');
 }
+
 
 function snuffyStyleScared() {
     alert('confused button!');
