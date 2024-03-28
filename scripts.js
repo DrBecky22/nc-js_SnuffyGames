@@ -13,15 +13,15 @@ const snuffyPic = document.getElementById('snuffyPic');
 fallRtBtn.addEventListener(click, 'fallRight');
 const fallRtBtn = document.getElementById('fallRight');
 
+function fallLeft() {
+    document.getElementById('snuffyPicStart').style.transform = "rotate(-90deg)";
+}
+
 function fallRight() {
     // document.getElementById('snuffyPicStart').style.transform;
     currentDeg += 90
     // currentDeg = currentDeg + 90
     snuffyPic.style.transform = "rotate(90deg)";
-}
-
-function fallLeft() {
-    document.getElementById('snuffyPicStart').style.transform = "rotate(-90deg)";
 }
 
 function spinClock() {
