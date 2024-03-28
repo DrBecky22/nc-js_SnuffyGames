@@ -1,8 +1,6 @@
 //////////////// Snuffy Scripts /////////////////////////
 function colorChange() {
-    // alert("you made it to ColorChange!")
     document.getElementById('snuffy-section-title').style.color='RebeccaPurple';
-    // return false;
 }
 
 function colorBack() {
@@ -11,17 +9,16 @@ function colorBack() {
 
 const snuffyPic = document.getElementById('snuffyPicStart');
 const fallRtBtn = document.getElementById('fallRight');
+const fallLftBtn = document.getElementById('fallLeft');
 fallRtBtn.addEventListener('click', fallRight);
+fallLftBtn.addEventListener('click', fallLeft);
 
 
 function fallLeft() {
-    document.getElementById('snuffyPicStart').style.transform = "rotate(-90deg)";
+    snuffyPic.style.transform = "rotate(-90deg)";
 }
 
 function fallRight() {
-    // snuffyPic.style.transform;
-    // currentDeg += 90
-    // // currentDeg = currentDeg + 90
     snuffyPic.style.transform = "rotate(90deg)";
 }
 
@@ -52,7 +49,7 @@ function snuffyStylePaisley() {
 
 ///////////////////////////Color Change Script////////////////////////////
 
-function changeColor(color) {
+function changeTextColor(color) {
     let clrText = document.querySelector("#colorText");
     clrText.style.color = color;
 }
