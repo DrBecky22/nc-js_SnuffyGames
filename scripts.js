@@ -9,18 +9,19 @@ function colorBack() {
     document.getElementById('snuffy-section-title').style.color='steelblue';
 }
 
-const snuffyPic = document.getElementById('snuffyPic');
-fallRtBtn.addEventListener(click, 'fallRight');
+const snuffyPic = document.getElementById('snuffyPicStart');
 const fallRtBtn = document.getElementById('fallRight');
+fallRtBtn.addEventListener('click', fallRight);
+
 
 function fallLeft() {
     document.getElementById('snuffyPicStart').style.transform = "rotate(-90deg)";
 }
 
 function fallRight() {
-    // document.getElementById('snuffyPicStart').style.transform;
-    currentDeg += 90
-    // currentDeg = currentDeg + 90
+    // snuffyPic.style.transform;
+    // currentDeg += 90
+    // // currentDeg = currentDeg + 90
     snuffyPic.style.transform = "rotate(90deg)";
 }
 
