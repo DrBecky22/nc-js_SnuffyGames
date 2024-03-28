@@ -1,7 +1,6 @@
 //////////////// Snuffy Scripts /////////////////////////
 function colorChange() {
     // alert("you made it to ColorChange!")
-    console.log("you made it to colorChange");
     document.getElementById('snuffy-section-title').style.color='RebeccaPurple';
     // return false;
 }
@@ -111,7 +110,7 @@ function bmiCalculator(weight, height) {
     if (Math.round (bmi >24.9)) 
        return ("your BMI is " +bmi+ ", so you are overweight.");
 }
-//  bmiCalculator(65, 1.8);
+ bmiCalculator(65, 1.8);
 
  // alert ("your BMI is " +bmi+ ", so you are underweight.");
 // alert ("your BMI is " +bmi+ ", so you have a normal weight.");
