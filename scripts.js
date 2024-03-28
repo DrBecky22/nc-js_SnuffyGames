@@ -99,11 +99,7 @@ function timeCalculator(){
 //////////////////////////BMI Calculator Script////////////////////////////
 
 function bmiCalculator(weight, height) {
-    let weight = prompt("what is your weight in pounds?"); //need to convert from string to number
-    let height = prompt("what is your height in inches?"); //need to convert from string to number
-
-    let bmi = weight / Math.pow(height, 2);  
-
+    var bmi = weight / Math.pow(height, 2);  
     if (Math.round (bmi<18.5)) 
        return ("your BMI is " +bmi+ ", so you are underweight.");
     if (Math.round (bmi >=18.5 && bmi<=24.9))
