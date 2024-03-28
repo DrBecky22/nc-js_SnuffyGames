@@ -51,10 +51,10 @@ function snuffyStylePaisley() {
 
 ///////////////////////////Color Change Script////////////////////////////
 
-// function changeColor(color) {
-//     let clrText = document.querySelector("#colorText");
-//     clrText.style.color = color;
-// }
+function changeColor(color) {
+    let clrText = document.querySelector("#colorText");
+    clrText.style.color = color;
+}
 
 /////////////////////////Love Calculator Script///////////////////////////
 
@@ -65,7 +65,7 @@ function loveCalculator() {
     let loveScore = Math.floor(Math.random() *100) +1;
     
         if (loveScore >=70) {
-            alert ("Wow! your love score is " +loveScore+ "%, there is some sizzling chemistry here, congratulations!" )
+            alert ("Wow! your love score is " +loveScore+ "%, there is some sizzling chemistry here, congratulations!" );
         }
         
         if (loveScore >30 && loveScore <=69) {
@@ -89,7 +89,7 @@ function timeCalculator(){
     var days = (yearsLeft*365);
     var weeks = (yearsLeft*52);
     var months = (yearsLeft*12);
-    alert ("Ok, " + name + " you have " + days + ", " + weeks + ", and " + months + " left before your 90th year. Spend it well, Live long and Prosper, Be excellent and party on."); 
+    alert ("Ok, " + name + " you have " + days + " days, " + weeks + " weeks, and " + months + " months left before your 90th year. Spend it well, Live long and Prosper, Be excellent and party on."); 
 }
     // let btn = document.getElementById("TimeCalc-btn");
     // btn.addEventListener('click', event => {
