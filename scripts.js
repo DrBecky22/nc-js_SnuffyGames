@@ -11,7 +11,7 @@ const snuffyPic = document.getElementById('snuffyPicStart');
 const fallRtBtn = document.getElementById('fallRight');
 const fallLftBtn = document.getElementById('fallLeft');
 fallRtBtn.addEventListener('click', fallRight);
-fallLftBtn.addEventListener('click', fallLeft);
+fallLftBtn.addEventListener('click', fallLeft); 
 
 
 function fallLeft() {
